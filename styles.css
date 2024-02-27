@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Zachary Fraedrich
 */
 /* -------------------------------------------------- */
 /* 
@@ -333,7 +333,15 @@ footer{
         - tell these to be 50% wide in the container
         - add the large box shadow
 */
-/* ADD SELECTOR AND STYLES HERE */
+#section2 a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: var(--box-shadow-lg);
+}
 
 /* For the first link in this section: */
 #section2 a:first-of-type{
@@ -377,7 +385,10 @@ footer{
             - left: 60px
 */
 #section2 div > p:last-of-type{
-    
+    background-color: var(--dk-teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -394,7 +405,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border-color: var(--lt-blue);
+    box-shadow: var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
@@ -418,7 +432,11 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
-    
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    filter: var(--filter-shadow-sm)
 }
 
 #section3 div::before{
